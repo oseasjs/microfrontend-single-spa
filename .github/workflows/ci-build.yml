@@ -16,10 +16,6 @@ jobs:
       matrix:
         node-version: [16.x]
 
-    # https://stackoverflow.com/questions/58139406/only-run-job-on-specific-branch-with-github-actions
-    # "deploy": "gh-pages -d build"
-    # "gh-pages": "^3.1.0",
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -32,7 +28,7 @@ jobs:
       working-directory: root-config
       run: |
         npm install
-        npm run deploy
+        npm run build
       env:
         CI: true
 
@@ -40,7 +36,7 @@ jobs:
       working-directory: react-utils
       run: |
         npm install
-        npm run deploy
+        npm run build
       env:
         CI: true
 
@@ -48,7 +44,7 @@ jobs:
       working-directory: react-header
       run: |
         npm install
-        npm run deploy
+        npm run build
       env:
         CI: true
 
@@ -56,7 +52,7 @@ jobs:
       working-directory: react-single
       run: |
         npm install
-        npm run deploy
+        npm run build
       env:
         CI: true
 
@@ -64,7 +60,7 @@ jobs:
       working-directory: react-multiples
       run: |
         npm install
-        npm run deploy
+        npm run build
       env:
         CI: true
 
@@ -72,7 +68,7 @@ jobs:
       working-directory: react-lazy
       run: |
         npm install
-        npm run deploy
+        npm run build
       env:
         CI: true
 
@@ -80,14 +76,14 @@ jobs:
       working-directory: react-parcel
       run: |
         npm install
-        npm run deploy
-      # env:
-      #   CI: true
+        npm run build
+      env:
+        CI: true
 
     - name: Build & Deploy react-parcel-form module
       working-directory: react-parcel-form
       run: |
         npm install
-        npm run deploy
-      # env:
-      #   CI: true
+        npm run build
+      env:
+        CI: true

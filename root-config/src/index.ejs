@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MFE, React and Single SPA | Root Config</title>
+  <title>Microfrontend using React and Single SPA | Root Config</title>
+  <base href="%PUBLIC_URL%/" />
   <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
@@ -20,25 +21,6 @@
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
   
-  <!-- <% if (isLocal) { %>
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@poc/root-config": "//localhost:9000/poc-root-config.js",
-        "@poc/react-single": "//localhost:9001/poc-react-single.js",
-        "@poc/react-multiples": "//localhost:9002/poc-react-multiples.js",
-        "@poc/react-parcel": "//localhost:9003/poc-react-parcel.js",
-        "@poc/react-parcel-form": "//localhost:9004/poc-react-parcel-form.js",
-        "@poc/react-utils": "//localhost:9005/poc-react-utils.js",
-        "@poc/react-lazy": "//localhost:9006/poc-react-lazy.js",
-        "@poc/react-header": "//localhost:9007/poc-react-header.js"
-      }
-    }
-  </script>
-  <% } %> -->
-  
-
   <% if (isLocal) { %>
     <script type="systemjs-importmap" src="https://oseasjs.github.io/microfrontend-single-spa/root-config/importmap.development.json"></script>
   <% } else { %>
