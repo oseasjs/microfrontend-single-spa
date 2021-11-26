@@ -16,6 +16,10 @@ jobs:
       matrix:
         node-version: [16.x]
 
+    # https://stackoverflow.com/questions/58139406/only-run-job-on-specific-branch-with-github-actions
+    # "deploy": "gh-pages -d build"
+    # "gh-pages": "^3.1.0",
+
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}

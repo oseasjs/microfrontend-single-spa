@@ -1,0 +1,40 @@
+{
+    "applications": [
+        {
+            "name": "@single-spa/welcome",
+            "package": "@single-spa/welcome",
+            "activeWhen": "/",
+            "exact": true
+        },
+        {
+            "name": "@poc/react-header",
+            "package": "@poc/react-header",
+            "activeWhen": "/",
+            "exact": false
+        },
+        {
+            "name": "@poc/react-single",
+            "package": "@poc/react-single",
+            "activeWhen": "/react-single",
+            "exact": true
+        },
+        {
+            "name": "@poc/react-multiples",
+            "package": "@poc/react-multiples",
+            "activeWhen": "/react-multiples",
+            "exact": false
+        },
+        {
+            "name": "@poc/react-lazy",
+            "package": "@poc/react-lazy",
+            "activeWhen": "/react-lazy",
+            "exact": false
+        },
+        {
+            "name": "@poc/react-parcel-form",
+            "package": "@poc/react-parcel-form",
+            "activeWhen": "/react-single-form",
+            "exact": true
+        }
+    ]
+}
