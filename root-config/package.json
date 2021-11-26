@@ -1,5 +1,6 @@
 {
   "name": "@poc/root-config",
+  "homepage": "https://oseasjs.github.io/microfrontend-single-spa",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js",
