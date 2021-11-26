@@ -28,15 +28,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-
-    # - name: Build root-config module
-    #   working-directory: root-config
-    #   run: |
-    #     npm install
-    #     npm run build
-    #   env:
-    #     CI: true
-
     - name: Build & Deploy root-config module
       working-directory: root-config
       run: |

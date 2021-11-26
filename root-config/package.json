@@ -10,7 +10,7 @@
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages root-config -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
