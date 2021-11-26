@@ -26,8 +26,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        
     # - name: Build root-config module
     #   working-directory: root-config
     #   run: |
