@@ -35,8 +35,6 @@ jobs:
         npm run deploy
       env:
         CI: true
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build & Deploy react-utils module
       working-directory: react-utils
@@ -45,8 +43,6 @@ jobs:
         npm run deploy
       env:
         CI: true
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build & Deploy react-header module
       working-directory: react-header
