@@ -4,6 +4,7 @@
 - [Node](https://nodejs.org/en/docs/);
 - [ReactJS](https://pt-br.reactjs.org/docs/getting-started.html);
 - [Single-SPA](https://single-spa.js.org/docs/getting-started-overview);
+- [Mocky IO](https://designer.mocky.io/);
 
 ## Project Goal
 

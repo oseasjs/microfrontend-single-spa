@@ -33,7 +33,7 @@
         {
             "name": "@poc/react-parcel-form",
             "package": "@poc/react-parcel-form",
-            "activeWhen": "/react-single-form",
+            "activeWhen": "/react-parcel-form",
             "exact": true
         }
     ]
