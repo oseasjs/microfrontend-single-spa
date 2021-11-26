@@ -7,7 +7,8 @@
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "build": "concurrently npm:build:*",
-    "build:webpack": "webpack --mode=production"
+    "build:webpack": "webpack --mode=production",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -37,6 +38,7 @@
   "dependencies": {
     "@types/jest": "^27.0.1",
     "@types/systemjs": "^6.1.1",
+    "gh-pages": "^3.2.3",
     "single-spa": "^5.9.3"
   }
 }
