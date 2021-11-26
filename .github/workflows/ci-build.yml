@@ -32,61 +32,60 @@ jobs:
       working-directory: root-config
       run: |
         npm install
-        npm run build
         npm run deploy
 
-    - name: Build react-utils module
+    - name: Build & Deploy react-utils module
       working-directory: react-utils
       run: |
         npm install
-        npm run build --if-present
-      env:
-        CI: true
+        npm run deploy
+      # env:
+      #   CI: true
 
-    - name: Build react-header module
+    - name: Build & Deploy react-header module
       working-directory: react-header
       run: |
         npm install
-        npm run build --if-present
+        npm run deploy
       env:
         CI: true
 
-    - name: Build react-single module
+    - name: Build & Deploy react-single module
       working-directory: react-single
       run: |
         npm install
-        npm run build --if-present
+        npm run deploy
       env:
         CI: true
 
-    - name: Build react-multiples module
+    - name: Build & Deploy react-multiples module
       working-directory: react-multiples
       run: |
         npm install
-        npm run build --if-present
+        npm run deploy
       env:
         CI: true
 
-    - name: Build react-lazy module
+    - name: Build & Deploy react-lazy module
       working-directory: react-lazy
       run: |
         npm install
-        npm run build --if-present
+        npm run deploy
       env:
         CI: true
 
-    - name: Build react-parcel module
+    - name: Build & Deploy react-parcel module
       working-directory: react-parcel
       run: |
         npm install
-        npm run build --if-present
-      env:
-        CI: true
+        npm run deploy
+      # env:
+      #   CI: true
 
-    - name: Build react-parcel-form module
+    - name: Build & Deploy react-parcel-form module
       working-directory: react-parcel-form
       run: |
         npm install
-        npm run build --if-present
-      env:
-        CI: true
+        npm run deploy
+      # env:
+      #   CI: true

@@ -20,8 +20,28 @@
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
   
+  <!-- <% if (isLocal) { %>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+        "@poc/root-config": "//localhost:9000/poc-root-config.js",
+        "@poc/react-single": "//localhost:9001/poc-react-single.js",
+        "@poc/react-multiples": "//localhost:9002/poc-react-multiples.js",
+        "@poc/react-parcel": "//localhost:9003/poc-react-parcel.js",
+        "@poc/react-parcel-form": "//localhost:9004/poc-react-parcel-form.js",
+        "@poc/react-utils": "//localhost:9005/poc-react-utils.js",
+        "@poc/react-lazy": "//localhost:9006/poc-react-lazy.js",
+        "@poc/react-header": "//localhost:9007/poc-react-header.js"
+      }
+    }
+  </script>
+  <% } %> -->
+
   <% if (isLocal) { %>
-    <script type="systemjs-importmap"></script>
+    <script type="systemjs-importmap" src="https://oseasjs.github.io/microfrontend-single-spa/root-config/importmap.development.json"></script>
+  <% } else { %>
+    <script type="systemjs-importmap" src="https://oseasjs.github.io/microfrontend-single-spa/root-config/importmap.production.json"></script>
   <% } %>
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>

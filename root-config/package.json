@@ -9,8 +9,9 @@
     "check-format": "prettier --check .",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages root-config -d dist"
+    "copy": "cp ./public/jsons/*.json ./dist",
+    "predeploy": "npm run build && npm run copy",
+    "deploy": "gh-pages -e root-config -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -40,6 +41,7 @@
   "dependencies": {
     "@types/jest": "^27.0.1",
     "@types/systemjs": "^6.1.1",
+    "axios": "^0.24.0",
     "gh-pages": "^3.2.3",
     "single-spa": "^5.9.3"
   }
