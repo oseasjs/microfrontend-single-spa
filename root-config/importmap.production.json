@@ -1,0 +1,13 @@
+{
+    "imports": {
+      "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+      "@poc/root-config": "https://oseasjs.github.io/microfrontend-single-spa/root-config/poc-root-config.js",
+      "@poc/react-single": "https://oseasjs.github.io/microfrontend-single-spa/react-single//poc-react-single.js",
+      "@poc/react-multiples": "https://oseasjs.github.io/microfrontend-single-spa/react-multiples/poc-react-multiples.js",
+      "@poc/react-parcel": "https://oseasjs.github.io/microfrontend-single-spa/react-parcel/poc-react-parcel.js",
+      "@poc/react-parcel-form": "https://oseasjs.github.io/microfrontend-single-spa/react-parcel-form/poc-react-parcel-form.js",
+      "@poc/react-utils": "https://oseasjs.github.io/microfrontend-single-spa/react-utils/poc-react-utils.js",
+      "@poc/react-lazy": "https://oseasjs.github.io/microfrontend-single-spa/react-lazy/poc-react-lazy.js",
+      "@poc/react-header": "https://oseasjs.github.io/microfrontend-single-spa/react-header/poc-react-header.js"
+    }
+  }
