@@ -1,5 +1,13 @@
 # Microfrontend with Single SPA and React
 
+### Build Branches Status
+
+| Branch        | Build         | Coverage  |
+| ------------- |:-------------:| ---------:|
+| Develop       | ![CI](https://github.com/oseasjs/microfrontend-single-spa/workflows/CI/badge.svg?branch=develop) | [![codecov](https://codecov.io/gh/oseasjs/microfrontend-single-spa/branch/develop/graph/badge.svg)](https://codecov.io/gh/oseasjs/microfrontend-single-spa/branch/develop) |
+| Master        | ![CI](https://github.com/oseasjs/microfrontend-single-spa/workflows/CI/badge.svg?branch=master)  | [![codecov](https://codecov.io/gh/oseasjs/microfrontend-single-spa/branch/master/graph/badge.svg)](https://codecov.io/gh/oseasjs/microfrontend-single-spa/branch/master)  |
+
+
 ## This project was bootstrapped with:
 - [Node](https://nodejs.org/en/docs/);
 - [ReactJS](https://pt-br.reactjs.org/docs/getting-started.html);
