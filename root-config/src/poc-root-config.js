@@ -8,11 +8,14 @@ fetch('https://run.mocky.io/v3/7f53a28a-3271-434f-bba6-0545d0b5eb7b')
       registerApplication({
         name: d.name,
         app: () => System.import(d.package),
-        activeWhen: d.exact ? (location) => location.pathname === d.activeWhen : d.activeWhen
+        activeWhen: d.exact 
+          ? (location) => location.pathname === d.activeWhen 
+          : d.activeWhen
       });
     })
   })
-
-start({
-  urlRerouteOnly: true,
-});
+  .finally(() => {
+    start({
+      urlRerouteOnly: true,
+    });
+  })
