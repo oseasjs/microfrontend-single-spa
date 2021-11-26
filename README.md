@@ -5,7 +5,6 @@
 - [ReactJS](https://pt-br.reactjs.org/docs/getting-started.html);
 - [Single-SPA](https://single-spa.js.org/docs/getting-started-overview);
 
-
 ## Project Goal
 
 _TODO_
