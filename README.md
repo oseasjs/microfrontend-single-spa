@@ -26,8 +26,8 @@ _TODO_
 _TODO_
 
 * Running Locally: http://localhost:9000
-* On Github Pages: https://oseasjs.github.io/microfrontend-single-spa/root-config/
-* On Netlify: https://microfrontend-single-spa-react.netlify.app/
+* On Github Pages [TEST]: https://oseasjs.github.io/microfrontend-single-spa/root-config/
+* On Netlify [PROD]: https://microfrontend-single-spa-react.netlify.app/
 
 
 ## Microfrontend Types
